@@ -679,6 +679,29 @@ button.btn-block.ebtn-r {
     color: #060707;
 }
 /* End Hero-area */
+.surprise-btn{
+    background: linear-gradient(45deg, #ff6a88, #ff99ac);
+    color: white;
+    border: none;
+    padding: 12px 22px;
+    font-size: 16px;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+}
+
+.surprise-btn:hover{
+    transform: translateY(-3px);
+    box-shadow: 0 6px 15px rgba(0,0,0,0.25);
+    background: linear-gradient(45deg, #ff4d6d, #ff758f);
+}
+
+.surprise-box{
+    display:none;
+    margin-top:20px;
+    animation: fadeIn 1s ease;
+}
 /* 2.3 Service*/
 .service{
     background: #fff;
@@ -3183,3 +3206,4 @@ section.blog-details-2 {
     padding-bottom: 25px;
 }
 /*End b-details img*/
+
