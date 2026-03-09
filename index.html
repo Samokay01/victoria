@@ -81,12 +81,27 @@
                             </div>
                             <div class="ss-content">
                                 <h3>Epistle</h3>
-                                <p>Another year older, wiser, and still just as chaotic—impressive! 😆 Seriously, how have we survived this long together without causing a major incident? (Or maybe we have, but no one caught us.)  
-                                    From the ridiculous inside jokes that no one else understands to the times of blocking and not talking is basically a collection of bloopers, and I wouldn’t trade it for the world.  
-                                    You are one of the most amazing, hilarious, and kind people I know, and life wouldn’t be half as fun without you. Your ability to make any situation 10x funnier (or 10x weirder) is truly a gift. 
-                                    I admire you for your kindness, your endless energy, and, most importantly, your ability to put up with me all these years.  
-                                    <br> So here’s to another year of epic memories, legendary stories, and laughing until we cry. May this year bring you happiness, success, and zero embarrassing flashbacks from this video I may or may not have made for you. 😜  
-                                    Happy Birthday, bestie! ❤️🎂🎁</p>
+                                <p>
+                                Another year, another birthday… and apparently another website from me. At this point it’s officially a tradition 😄. 
+                                Honestly, I’m not even surprised that you remembered last year’s one, you and your dramatic memory for special things.
+
+                                Looking back at all our moments together, it’s crazy how many memories we’ve managed to 
+                                    create — from the random conversations that somehow turn into deep life talks, to the ridiculous 
+                                    inside jokes that absolutely no one else understands. Our friendship is honestly a mix of laughter, 
+                                    chaos, occasional silence, and then picking up right where we left off like nothing ever happened.
+
+                                But through it all, one thing has always been clear - you are an incredibly special person. Your kindness, 
+                                    your heart, your strength, and your ability to bring life into every moment is something I truly admire. 
+                                    You make people around you feel seen, valued, and happy, and that is a rare gift.
+
+                                I’m really grateful for our friendship and for all the memories we’ve shared so far. And 
+                                    if the past years are anything to go by, I’m sure there are still many more hilarious, 
+                                    unforgettable, and slightly chaotic moments ahead of us.
+
+                                So as you step into another year of your life, I pray that it brings you deeper joy, greater 
+                                    success, peace of mind, and beautiful surprises along the way.
+                                Happy Birthday to an amazing friend. 🎉🎂
+                                </p>
                             </div>
                         </div>
                     </div>
@@ -98,12 +113,30 @@
                             </div>
                             <div class="ss-content">
                                 <h3>Prayer</h3>
-                                <p>The Lord bless thee, and keep thee: The Lord make his face shine upon thee, and be gracious unto thee: 
-                                    The Lord lift up his countenance upon thee, and give thee peace.</p>
+                                <p>Happy art thou, O Victoria: who is like unto thee, O people saved by the LORD, the 
+                                    shield of thy help, and who is the sword of thy excellency! and thine enemies shall 
+                                    be found liars unto thee; and thou shalt tread upon their high places. <i>Deuteronomy 33:29</i></p>
                                 
                             </div>
                         </div>
                     </div>
+                     <div class="col-md-4">
+                        <div class="single-service wow fadeInUp" data-wow-delay="1.5s">
+                            <span class="flaticon-paint-roller ficon-bg-3"></span>
+                            <div class="icon-inner">
+                                <span class="fa-solid fa-gift"></span>
+                            </div>
+                            <div class="ss-content">
+                                <button class="surprise-btn" onclick="showSurprise()">🎁 Click for a Surprise</button>
+                                <div id="surprise" class="surprise-box" style="display:none; margin-top:20px;">
+                                    <h2>Surprise! 🎉</h2>
+                                    <p>You are one of the most amazing people in my life and this little website is just a reminder of how special you are. Happy Birthday again! ❤️</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!--
                     <div class="col-md-4">
                         <div class="single-service wow fadeInUp" data-wow-delay="1.5s">
                             <span class="flaticon-paint-roller ficon-bg-3"></span>
@@ -116,6 +149,7 @@
                             </div>
                         </div>
                     </div>
+                    -->
                     
                 </div>
             </div>
@@ -132,7 +166,7 @@
                 <div class="row">
                     <div class="col-md-5">
                         <div class="project-1">
-                            <img src="assets/images/1.jpg" alt="">
+                            <img src="assets/images/1.jpeg" alt="">
                         </div>
                     </div>
                     <div class="col-md-7">
@@ -157,8 +191,8 @@
     <section class="project-ask">
         <div class="container">
             <div class="pro-ask-content">
-                <h1 data-aos="slide-in-left">Do You Love What You See</h1>
-                <p>I know you're blushing already. I predicted it. Durrrrrr</p>
+                <h1 data-aos="slide-in-left">Are you smiling yet?</h1>
+                <p>If you're not smiling by now, then this website clearly needs more surprises. But I know you are… because I know you too well</p>
             </div>
         </div>
     </section>
@@ -188,8 +222,37 @@
     <script src="assets/js/bootstrap.min.js"></script>
 
     <script src="assets/js/custom.js"></script>
+    <script>
+function showSurprise() {
+    document.getElementById("surprise").style.display = "block";
+
+    var duration = 2000;
+    var end = Date.now() + duration;
+
+    (function frame() {
+        confetti({
+            particleCount: 5,
+            angle: 60,
+            spread: 55,
+            origin: { x: 0 }
+        });
+
+        confetti({
+            particleCount: 5,
+            angle: 120,
+            spread: 55,
+            origin: { x: 1 }
+        });
+
+        if (Date.now() < end) {
+            requestAnimationFrame(frame);
+        }
+    }());
+}
+</script>
+
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
 </body>
 
-<!--  05:49-->
-
 </html>
+
